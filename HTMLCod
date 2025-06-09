@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SVZ Agency</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 80px 60px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      max-width: 500px;
+    }
+
+    .hero p.sub {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 20px;
+    }
+
+    .shape {
+      position: absolute;
+    }
+
+    .pink-x {
+      top: 80px;
+      left: 60px;
+      width: 120px;
+      height: 120px;
+      background-color: #e76eff;
+      transform: rotate(45deg);
+    }
+
+    .blue-triangle {
+      top: 140px;
+      left: 140px;
+      width: 0;
+      height: 0;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-bottom: 100px solid #00ffe4;
+    }
+
+    .yellow-plus {
+      top: 60px;
+      left: 300px;
+      width: 140px;
+      height: 140px;
+    }
+
+    .yellow-plus::before,
+    .yellow-plus::after {
+      content: '';
+      position: absolute;
+      background: #ffdb4d;
+    }
+
+    .yellow-plus::before {
+      width: 40px;
+      height: 140px;
+      left: 50px;
+      top: 0;
+    }
+
+    .yellow-plus::after {
+      width: 140px;
+      height: 40px;
+      top: 50px;
+      left: 0;
+    }
+
+    .hero .background-shapes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .work-section {
+      padding: 100px 60px;
+      background-color: #000;
+      color: #fff;
+      position: relative;
+    }
+
+    .work-section h2 {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-size: 14px;
+      letter-spacing: 3px;
+      margin: 0;
+      position: absolute;
+      left: 20px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+      margin-left: 60px;
+    }
+
+    .project-card {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: #ccc;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+    <nav>
+    <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#">Process</a>
+    <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#">Work</a>
+    <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#">FAQs</a>
+    <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#">Webflow</a>
+    <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#">Blog</a>
+    <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>
+    We’ll create an award winning website for you through our carefully crafted process.
+  </h1>
+  <p class="sub">MAKING MEANINGFUL EXPERIENCES</p>
+
+  <div class="background-shapes">
+    <div class="shape pink-x"></div>
+    <div class="shape blue-triangle"></div>
+    <div class="shape yellow-plus"></div>
+      </div>
+</section>
+
+<section style="padding: 100px 60px; background-color: #000; color: #fff;">
+  <h2 style="writing-mode: vertical-rl; text-orientation: mixed; font-size: 14px; letter-spacing: 3px; margin: 0; position: absolute; left: 20px;">PROCESS</h2>
+  
+  <div style="display: flex; justify-content: space-between; gap: 20px;">
+    
+    <!-- Discovery -->
+    <div style="flex: 1; padding: 20px; border-right: 1px solid #333;">
+      <h3>Discovery</h3>
+      <p style="font-size: 14px; line-height: 1.6;">
+        We start every new client interaction with an in-depth discovery call where we get to know each other, discuss your current and future objectives, and recommend the best course of action.
+      </p>
+      <div style="margin-top: 20px; width: 16px; height: 16px; background-color: #43c0f4; border-radius: 50%;"></div>
+    </div>
+
+    <!-- Strategy -->
+    <div style="flex: 1; padding: 20px; border-right: 1px solid #333;">
+      <h3>Strategy</h3>
+      <p style="font-size: 14px; line-height: 1.6;">
+        Every end-to-end project of ours begins with a bespoke pre-build strategy. From brand ID consultation to in-depth code reviews we’re here to set the stage for success.
+      </p>
+      <div style="margin-top: 20px; width: 16px; height: 16px; background-color: #e76eff;"></div>
+    </div>
+
+    <!-- Design -->
+    <div style="flex: 1; padding: 20px; border-right: 1px solid #333;">
+      <h3>Design</h3>
+      <p style="font-size: 14px; line-height: 1.6;">
+        After we have a comprehensive understanding of your brand, we’ll be ready to move onto design. Each page or asset will be designed, reviewed, and given your stamp of approval.
+      </p>
+      <div style="margin-top: 20px; width: 24px; height: 24px; border-radius: 50%; background: radial-gradient(#43f4b0 40%, #000 40%, #ffe600 40%, #ffe600 60%);"></div>
+    </div>
+
+    <!-- Build -->
+    <div style="flex: 1; padding: 20px;">
+      <h3>Build</h3>
+      <p style="font-size: 14px; line-height: 1.6;">
+        Whether we’ve just finished designing your new site or you’re handing off finished designs for us to develop in Webflow, we’re here to apply our trusted development process to your project.
+      </p>
+      <div style="margin-top: 20px; display: flex; gap: 4px;">
+        <div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 14px solid #00ffe4;"></div>
+        <div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 14px solid #00ffe4;"></div>
+        <div style="width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 14px solid #00ffe4;"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 30px; font-size: 14px;">
+    <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#" style="color: white; text-decoration: none;">› Read more</a>
+  </div>
+</section>
+
+<section style="padding: 100px 60px; background-color: #000; color: #fff;">
+  <h2 style="writing-mode: vertical-rl; text-orientation: mixed; font-size: 14px; letter-spacing: 3px; margin: 0; position: absolute; left: 20px;">WORK</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 60px; justify-content: space-between;">
+
+  <!-- WORK Section -->
+  <section class="work-section">
+    <h2>WORK</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="Zendrive.png" alt="Zendrive project" />
+        <h3>Zendrive</h3>
+        <p>Zendrive’s sleek, professional website was designed to reflect a company that uses cutting edge technology to create solutions for their clients.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="CoreSite.png" alt="CoreSite project" />
+        <h3>CoreSite</h3>
+        <p>Design, Webflow Development, and CMS Training</p>
+      </div>
+
+      <div class="project-card">
+        <img src="SearchIo.png" alt="Search.io project" />
+        <h3>Search.io</h3>
+        <p>Looking for a complete design overhaul, search engine solutions company Search.io turned to SVZ.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="WhiteBoard.png" alt="Whiteboard project" />
+        <h3>Whiteboard</h3>
+        <p>We supported these creative agency superheroes on developing their new agency marketing website.</p>
+      </div>
+
+    </div>
+
+    <div style="margin-top: 30px; font-size: 14px; margin-left: 60px;">
+      <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#" style="color: white; text-decoration: none;">› Other recent work</a>
+    </div>
+  </section>
+
+ 
+  <h2 style="writing-mode: vertical-rl; text-orientation: mixed; font-size: 14px; letter-spacing: 3px; margin: 0; position: absolute; left: 20px;">TESTIMONY</h2>
+
+   <div style="position: absolute; top: 30px; left: 80px; display: flex; gap: 10px;">
+    <div style="width: 20px; height: 20px; background-color: #ffe600;"></div>
+    <div style="width: 20px; height: 20px; background-color: #00eaff; transform: rotate(45deg);"></div>
+  </div>
+
+  
+  <div style="margin-top: 80px; max-width: 700px;">
+    <p style="font-size: 16px; line-height: 1.6; font-style: italic;">
+      SVZ was very responsive to the needs of our brand and worked in partnership with us to create a visual identity that feels authentic to our diverse team, users, and community. They not only delivered great results but were super responsive and excellent to work with.
+    </p>
+
+    
+    <div style="display: flex; align-items: center; margin-top: 30px; gap: 15px;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #444;"></div>
+
+      <div>
+        <div style="font-weight: bold;">Mariana Racasan</div>
+        <div style="font-size: 14px;">MARKETING DIRECTOR AT ZENHUB</div>
+      </div>
+
+      <div style="margin-left: auto;">
+        <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#" style="color: white; font-size: 14px; text-decoration: none;">› Case study</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 100px 60px; background-color: #000; color: #fff; position: relative; overflow: hidden;">
+
+  <!-- Вертикальний напис -->
+  <h2 style="writing-mode: vertical-rl; text-orientation: mixed; font-size: 14px; letter-spacing: 3px; margin: 0; position: absolute; left: 20px;">RESOURCES</h2>
+
+  <!-- Рожева фігура -->
+  <div style="position: absolute; top: 50px; left: 50%; width: 50px; height: 50px; background-color: #ff58ff; border-radius: 50%; transform: translateX(-50%);"></div>
+
+  <!-- Півколо -->
+  <div style="position: absolute; bottom: -100px; right: -100px; width: 300px; height: 150px; background-color: #69f89d; border-top-left-radius: 300px; border-top-right-radius: 300px;"></div>
+
+  <!-- Контейнер блоків -->
+  <div style="display: flex; gap: 60px; flex-wrap: wrap; justify-content: space-between; z-index: 1; position: relative;">
+
+    <!-- Webflow блок -->
+    <div style="flex: 0 1 45%; background-color: #007BFF; padding: 40px; border-radius: 12px;">
+      <h3 style="color: white; font-size: 24px; margin-bottom: 10px;">webflow</h3>
+      <p style="font-size: 14px;">We're a Webflow Experts Agency</p>
+      <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: white; color: #007BFF; border-radius: 6px; font-weight: bold; text-decoration: none;">
+        › Why Webflow?
+      </a>
+    </div>
+
+    <!-- FAQ блок -->
+    <div style="flex: 0 1 45%;">
+      <h3 style="font-size: 24px;">FAQs</h3>
+      <p style="font-size: 14px;">Questions about working with SVZ? We have you covered.</p>
+      <a href="file:///C:/Users/User1/Documents/%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8.html#" style="display: inline-block; margin-top: 10px; color: white; font-size: 14px; text-decoration: none;">
+        › Get answers
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
